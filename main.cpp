@@ -18,11 +18,11 @@ using namespace std;
  *
  *
  *
-
+*/
 int sumByStride( const vector<int> &v, int stride ) {
 
     // iterator to run a for loop every X values
-    vector <const int> ::iterator iter = v.begin();
+    vector <int> ::const_iterator iter = v.begin();
 
 
     // addValues to receive values from iterator per stride
@@ -35,7 +35,7 @@ int sumByStride( const vector<int> &v, int stride ) {
 
     return addValues;
 }
-*/
+
 
 
 /*
@@ -112,14 +112,14 @@ string histogram( const vector<string> &v) {
     return st;
 }
 
-/*
+
 TEST_CASE( "Testing the sumByStride() function", "[sumByStride]" ) {
     REQUIRE( sumByStride(vector<int> {10,20,30,40,50},2)  == 90);
     REQUIRE( sumByStride(vector<int> {10,20,30,40,50},3)  == 50);
     REQUIRE( sumByStride(vector<int> {10,40,30,20,40},3)  == 30);
     REQUIRE( sumByStride(vector<int> {10,20,30,40,50,10,20,30,40,50},3)  == 120);
 }
-*/
+
 
 TEST_CASE( "Testing the histogram() function", "[histogram]" ) {
     string tmp = histogram(vector<string> {"foca", "leon", "zorra", "foca", "perro", "perro", "perro"});
