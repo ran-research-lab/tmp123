@@ -1,0 +1,34 @@
+{
+  "tests": [
+   {
+      "name": "get catch",
+      "setup": "",
+      "run": "wget https://raw.githubusercontent.com/catchorg/Catch2/master/single_include/catch2/catch.hpp",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 20,
+      "points": null
+    },
+    {
+      "name": "cmake and make",
+      "setup": "",
+      "run": "cmake . && make",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "run",
+      "setup": "",
+      "run": "./vectorAndMap",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
